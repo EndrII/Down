@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>res/sound2.png</file>
+        <file>res/sound.png</file>
+        <file>res/Player.png</file>
+        <file>res/normal.png</file>
+        <file>res/LOGO.png</file>
+        <file>res/izi.png</file>
+        <file>res/img6.png</file>
+        <file>res/img5.png</file>
+        <file>res/img4.png</file>
+        <file>res/img3.png</file>
+        <file>res/img2.png</file>
+        <file>res/img.png</file>
+        <file>res/help.png</file>
+        <file>res/hard.png</file>
+        <file>res/fone.png</file>
+        <file>res/Down1.png</file>
+        <file>res/about_img.png</file>
+        <file>res/6.png</file>
+        <file>res/5.png</file>
+        <file>res/4.png</file>
+        <file>res/3.png</file>
+        <file>res/2.png</file>
+        <file>res/1.png</file>
+        <file>res/LightFakingBal1.png</file>
+        <file>res/HeavyObjekt1.png</file>
+    </qresource>
+</RCC>

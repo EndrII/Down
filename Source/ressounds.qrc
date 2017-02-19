@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>sounds/MenuTrack.mp3</file>
+        <file>sounds/DigitalFace.mp3</file>
+    </qresource>
+</RCC>
