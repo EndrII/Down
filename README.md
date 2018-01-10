@@ -9,10 +9,11 @@ The game supports the following platforms:
 * linux (snap)
 * android
 
-## Донат
-Если вы хотите помочь проекту, то вы можете пожертвовать небольшую сумму на наш биткойн-кошелек.
+## Donate
+If you want to help the project, then you can donate a small amount to our bitcoin wallet.
 
-Биткойн-адрес - 1NJNbDKmezcUcHRfzpBeq2fHeG21oEKX8Q
+Bitcoin address - 1NJNbDKmezcUcHRfzpBeq2fHeG21oEKX8Q
+
 
 #Down
 
@@ -25,7 +26,7 @@ The game supports the following platforms:
 * linux (snap)
 * android
 
-## Donate
-If you want to help the project, then you can donate a small amount to our bitcoin wallet.
+## Донат
+Если вы хотите помочь проекту, то вы можете пожертвовать небольшую сумму на наш биткойн-кошелек.
 
-Bitcoin address - 1NJNbDKmezcUcHRfzpBeq2fHeG21oEKX8Q
+Биткойн-адрес - 1NJNbDKmezcUcHRfzpBeq2fHeG21oEKX8Q
