@@ -3,7 +3,7 @@
 ## Down arcade game.
 You take control of the ball, which you have to bring to the bottom, while you can see how the background will change behind, the deeper the more interesting! On the way to the core of the planet, the game will become more complicated, new platforms will appear with different effects that can help you
 
-# supported platforms
+# Supported platforms
 The game supports the following platforms:
 * Windows
 * linux (snap)
