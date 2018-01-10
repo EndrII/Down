@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/rus" lang="Russean">
+        <file>qml rus/Wictory.qml</file>
+        <file>qml rus/UpMenu.qml</file>
+        <file>qml rus/Setings.qml</file>
+        <file>qml rus/Player.qml</file>
+        <file>qml rus/pause.qml</file>
+        <file>qml rus/Mov.qml</file>
+        <file>qml rus/main.qml</file>
+        <file>qml rus/LvLUp.qml</file>
+        <file>qml rus/Help.qml</file>
+        <file>qml rus/GamePlay.qml</file>
+        <file>qml rus/ECheck.qml</file>
+        <file>qml rus/EButton.qml</file>
+        <file>qml rus/Balka.qml</file>
+        <file>qml rus/BackGround.qml</file>
+        <file>qml rus/About.qml</file>
+    </qresource>
+    <qresource prefix="/eng" lang="English">
+        <file>qml eng/Wictory.qml</file>
+        <file>qml eng/UpMenu.qml</file>
+        <file>qml eng/Setings.qml</file>
+        <file>qml eng/Player.qml</file>
+        <file>qml eng/pause.qml</file>
+        <file>qml eng/Mov.qml</file>
+        <file>qml eng/main.qml</file>
+        <file>qml eng/LvLUp.qml</file>
+        <file>qml eng/Help.qml</file>
+        <file>qml eng/GamePlay.qml</file>
+        <file>qml eng/ECheck.qml</file>
+        <file>qml eng/EButton.qml</file>
+        <file>qml eng/Balka.qml</file>
+        <file>qml eng/BackGround.qml</file>
+        <file>qml eng/About.qml</file>
+    </qresource>
+</RCC>
