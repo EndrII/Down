@@ -18,12 +18,11 @@ Image{
         height: 0.1*((gamePlay.height>gamePlay.width)?gamePlay.width:gamePlay.height);
         width: 0.1*((gamePlay.height>gamePlay.width)?gamePlay.width:gamePlay.height);
         z:0.00001;
-        //playing: false;
         source: settings.boalSet();
         property double speed: 0.1;
         property int lvl: 1;
         property int record:0;
-        property int mode:(acsi.active&&settings.control);//0 - button mode, 1- accelerometr mode
+        property int mode:(acsi.active&&settings.control);
         property bool movR: false;
         property bool movL: false;
         property bool movD: true;
@@ -38,7 +37,7 @@ Image{
             var temp =Qt.createComponent("Balka.qml");
             if(temp.status === Component.Ready){
                 var obj=temp.createObject(parent);
-                obj.spead=(settings.defSet()-lvl*200)/3.5; //obj.spead=(10000-lvl*100)/3.5;
+                obj.spead=(settings.defSet()-lvl*200)/2;
                 elements.push(obj);
                 obj.z=-0.0001;
             }
@@ -75,14 +74,7 @@ Image{
                 }
             }
         }
-    /*Timer{
-        id:fromeffect;
-        repeat:false;
-        interval:5000;
-        onTriggered: {
-            speadChang();
-        }
-    }*/
+
     Timer{
         id:gameBalkaTimer;
         property int index: 0
@@ -123,17 +115,13 @@ Image{
 
              if(movR&&mode==0){
                  mov+=(0.05-(effects_slou*0.04))/settings.weitSeit();
-             //    player.rotation+=mov*10;
              }
              if(movL&&mode==0){
                  mov-=(0.05-(effects_slou*0.04))/settings.weitSeit();
-                // player.rotation-=10-(effects_slou*8);
              }
 
              if(mode==1){
                  mov=((acsi.reading.x>acsi.reading.y)?acsi.reading.y/(5+(effects_slou*10)):acsi.reading.x/(-5-(effects_slou*10)))/((settings.boal+1)/2);
-                // var test=(acsi.reading.x>acsi.reading.y)?acsi.reading.y*4/(1+effects_slou*3):acsi.reading.x*-4/(1+effects_slou*3);   //=10-(effects_slou*8);
-                // player.rotation+=test;
              }
              movNormalize();
             player.y+=(downm*gamePlay.height*interval/1000);
@@ -144,8 +132,6 @@ Image{
              effects_time_lov=false;
              effects_slou=false;
              if(player.y>=gamePlay.height*1.2){
-                 //player.y=gamePlay.height-player.height
-                 //movD=false;
                  dead(record,lvl);
                  player.stop();
              }
@@ -163,14 +149,6 @@ Image{
                          effects_gold=true;
                          break;
                      case 3:
-                        /* effects_time_lov=true;
-                         speadChang();
-                         effects_time_lov=false;
-                         fromeffect.start();*/
-                        /* var index=0;
-                         while(elements[index].type!==3&&elements[index].y>=elements[i].y&&index<elements.length){
-                             index++;
-                         }*/
                              elements[i].type=0;
                              var x=player.x=elements[(gameBalkaTimer.index-1)%elements.length].x+elements[(gameBalkaTimer.index-1)%elements.length].width/2;
                              var y=player.y=elements[(gameBalkaTimer.index-1)%elements.length].y-player.height;
@@ -189,15 +167,11 @@ Image{
              }
              if(player.x>gamePlay.width){
                  player.x=0-player.width/2;
-               //  player.y-=player.height*2;
-                // dead(record);
-                // player.stop();
+
              }
              if(player.x<0-player.width){
                  player.x=gamePlay.width-player.width/2;
-                // player.y-=player.height*2;
-                // dead(record);
-                // player.stop();
+
              }
              if((++timer)%1000==0)
              {
@@ -214,10 +188,9 @@ Image{
     onLvlChanged: {
             speadChang();
     }
-    function speadChang(){//isparavit effect zel`nogo
+    function speadChang(){
         for(var i=0;i<elements.length;i++){
-            //elements[i].spead=(10000-lvl*100)/3.5*(effects_time_lov)?4:1;
-            elements[i].spead=(settings.defSet()-lvl*200)/3.5;
+            elements[i].spead=(settings.defSet()-lvl*200)/2;
         }
     }
     function start(){
