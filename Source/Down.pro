@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += quick
 QT += multimedia multimediawidgets
 CONFIG += c++11
 
@@ -32,3 +32,8 @@ DISTFILES += \
     android/gradlew.bat
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
